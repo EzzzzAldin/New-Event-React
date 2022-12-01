@@ -1,0 +1,22 @@
+.overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.icon {
+  font-size: 60px;
+  color: #fa8072;
+}
+
+.overview h2 {
+  font-weight: lighter;
+}
+
+.overview p {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 18px;
+}
