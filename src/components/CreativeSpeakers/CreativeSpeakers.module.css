@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card p {
+  opacity: 0.5;
+}

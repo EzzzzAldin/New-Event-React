@@ -1,0 +1,33 @@
+.creativespeaker-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fcfbf9;
+}
+
+.creativespeaker-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 30px;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.info h2 {
+  position: relative;
+  font-size: 40px;
+}
+
+.info h2::after {
+  content: " Speakers";
+  width: 100%;
+  height: 100%;
+  color: red;
+}
+
+.info p {
+  font-size: 20px;
+  opacity: 0.5;
+}

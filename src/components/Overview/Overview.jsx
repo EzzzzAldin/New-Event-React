@@ -8,7 +8,7 @@ const Overview = (props) => {
         <FontAwesomeIcon icon={props.icon} />
       </div>
       <h2>{props.title}</h2>
-      <p>{props.children}</p>
+      <p>{props.description}</p>
     </div>
   );
 };
