@@ -1,13 +1,13 @@
-.creativespeaker-section {
+.sponsors-section {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #fcfbf9;
+  background-color: #fff;
 }
 
-.creativespeaker-list {
+.sponsors-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  column-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  column-gap: 15px;
 }
 
 .info {
@@ -21,7 +21,7 @@
 }
 
 .info h2::after {
-  content: " Speakers";
+  content: " Sponsors";
   width: 100%;
   height: 100%;
   color: #f2545f;

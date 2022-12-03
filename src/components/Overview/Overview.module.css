@@ -8,7 +8,7 @@
 
 .icon {
   font-size: 60px;
-  color: #fa8072;
+  color: #f2545f;
 }
 
 .overview h2 {
@@ -17,6 +17,6 @@
 
 .overview p {
   text-align: center;
-  opacity: 0.5;
+  color: #707070;
   font-size: 18px;
 }
