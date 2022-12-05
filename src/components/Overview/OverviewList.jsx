@@ -43,7 +43,9 @@ const OverviewList = () => {
   ));
 
   return (
-    <Container className={classes["overview-list"]}>{overviews}</Container>
+    <section className={classes["overview-section"]}>
+      <Container className={classes["overview-list"]}>{overviews}</Container>
+    </section>
   );
 };
 

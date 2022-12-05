@@ -1,0 +1,83 @@
+.header {
+  height: 100vh;
+  background-image: url("../../shared/assets/imags/intro-bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info p {
+  font-size: 35px;
+  font-weight: bold;
+  color: #eee;
+}
+
+.info h2 {
+  font-size: 60px;
+  color: #fcfbf9;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btns button {
+  border: none;
+  padding: 8px;
+  margin: 10px;
+  width: 40%;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  font-size: 21px;
+  transition: 0.3s;
+}
+
+.btns .learn {
+  border: 3px solid #fcfbf9;
+  color: #fcfbf9;
+  background-color: transparent;
+}
+
+.btns .learn:hover {
+  background-color: #fcfbf9;
+  color: #f2545f;
+}
+
+.btns .register {
+  border: 3px solid #f2545f;
+  color: #fcfbf9;
+  background-color: #f2545f;
+}
+
+.btns .register:hover {
+  background-color: transparent;
+}
+
+/* Small */
+@media (max-width: 768px) {
+  .info p {
+    font-size: 20px;
+  }
+
+  .info h2 {
+    font-size: 30px;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  .btns button {
+    width: 100%;
+  }
+}

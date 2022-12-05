@@ -1,15 +1,9 @@
-import OverviewList from "./components/Overview/OverviewList";
-import CreativeSpeakersList from "./components/CreativeSpeakers/CreativeSpeakersList";
-import ProgramsList from "./components/Programs/ProgramsList";
-import SponsorsList from "./components/Sponsors/SponsorsList";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <OverviewList />
-      <CreativeSpeakersList />
-      <ProgramsList />
-      <SponsorsList />
+      <Home />
     </div>
   );
 }

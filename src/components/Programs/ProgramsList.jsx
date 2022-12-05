@@ -1,10 +1,10 @@
-import { NavLink, Route, Switch, Redirect } from "react-router-dom";
+import { NavLink, Route, Switch } from "react-router-dom";
 
 import classes from "./ProgramsList.module.css";
 import Container from "../UI/Container";
-import First from "../../pages/First";
-import Second from "../../pages/Second";
-import Third from "../../pages/Third";
+import First from "../../pages/ListPrograms/First";
+import Second from "../../pages/ListPrograms/Second";
+import Third from "../../pages/ListPrograms/Third";
 
 const ProgramsList = () => {
   return (
@@ -17,17 +17,17 @@ const ProgramsList = () => {
         <div className={classes.days}>
           <ul>
             <li>
-              <NavLink to="/first" activeClassName={classes.active}>
+              <NavLink to="/programs" activeClassName={classes.active} exact>
                 First Day
               </NavLink>
             </li>
             <li>
-              <NavLink to="/second" activeClassName={classes.active}>
+              <NavLink to="/programs/second" activeClassName={classes.active}>
                 Second Day
               </NavLink>
             </li>
             <li>
-              <NavLink to="/third" activeClassName={classes.active}>
+              <NavLink to="/programs/third" activeClassName={classes.active}>
                 Third Day
               </NavLink>
             </li>
@@ -35,17 +35,20 @@ const ProgramsList = () => {
         </div>
         <div className={classes.programs}>
           <Switch>
-            <Route path="/" exact>
-              <Redirect to="/first" />
-            </Route>
-            <Route path="/first">
+            <Route path="/programs" exact>
               <First />
             </Route>
-            <Route path="/second">
+            <Route path="/programs/first">
+              <First />
+            </Route>
+            <Route path="/programs/second">
               <Second />
             </Route>
-            <Route path="/third">
+            <Route path="/programs/third">
               <Third />
+            </Route>
+            <Route path="*">
+              <First />
             </Route>
           </Switch>
         </div>
