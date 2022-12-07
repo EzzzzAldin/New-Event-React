@@ -1,6 +1,10 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+
 import Container from "../UI/Container";
 import CreativeSpeakers from "./CreativeSpeakers";
 import classes from "./CreativeSpeakersList.module.css";
+import "swiper/css";
 
 import image1 from "../../shared/assets/speakers/speakers-img1.jpg";
 import image2 from "../../shared/assets/speakers/speakers-img2.jpg";
@@ -43,12 +47,13 @@ const DUMMY_CREATIVESPEAKERS = [
 
 const CreativeSpeakersList = () => {
   const creativeSpeakers = DUMMY_CREATIVESPEAKERS.map((creativeSpeaker) => (
-    <CreativeSpeakers
-      key={creativeSpeaker.id}
-      username={creativeSpeaker.username}
-      image={creativeSpeaker.image}
-      job={creativeSpeaker.job}
-    />
+    <SwiperSlide key={creativeSpeaker.id}>
+      <CreativeSpeakers
+        username={creativeSpeaker.username}
+        image={creativeSpeaker.image}
+        job={creativeSpeaker.job}
+      />
+    </SwiperSlide>
   ));
 
   return (
@@ -57,8 +62,21 @@ const CreativeSpeakersList = () => {
         <h2>Creative</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </div>
-      <Container className={classes["creativespeaker-list"]}>
-        {creativeSpeakers}
+
+      <Container>
+        <Swiper
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          spaceBetween={50}
+          slidesPerView={4}
+          modules={[Autoplay]}
+          className={classes["creativespeaker-list"]}
+        >
+          {creativeSpeakers}
+        </Swiper>
       </Container>
     </section>
   );

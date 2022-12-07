@@ -1,0 +1,26 @@
+.watch-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.watch-video {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  column-gap: 30px;
+}
+
+.watch-video h3 {
+  font-size: 25px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.watch-video p {
+  color: #707070;
+  font-size: 18px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 350px;
+}

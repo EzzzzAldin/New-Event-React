@@ -1,0 +1,22 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.accordion h3 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.accordion h3 span {
+  color: #f2545f;
+}
+
+.accordion p {
+  font-size: 20px;
+  color: #707070;
+}
