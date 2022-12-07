@@ -12,3 +12,24 @@
 .card p {
   opacity: #707070;
 }
+
+@media (max-width: 768px) {
+  .card h3 {
+    font-size: 10px;
+    font-weight: lighter;
+  }
+
+  .card p {
+    font-size: 9px;
+  }
+}
+/* Medium */
+@media (max-width: 992px) {
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+}

@@ -23,3 +23,15 @@
 .image img {
   max-width: 100%;
 }
+
+@media (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
+}
+/* Medium */
+@media (max-width: 992px) {
+  .about {
+    text-align: center;
+  }
+}

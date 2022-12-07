@@ -6,7 +6,7 @@ import classes from "./Program.module.css";
 const Program = (props) => {
   return (
     <div className={classes["program-info"]}>
-      <div>
+      <div className={classes.image}>
         <img src={props.image} alt="" />
       </div>
       <div className={classes["program-details"]}>

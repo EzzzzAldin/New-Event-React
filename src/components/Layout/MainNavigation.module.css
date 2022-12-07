@@ -46,3 +46,16 @@ h1::after {
 .items ul li a.active {
   color: #4f78ff;
 }
+
+@media (max-width: 768px) {
+  .items ul {
+    display: none;
+  }
+}
+/* Medium */
+@media (max-width: 992px) {
+  .items ul li {
+    margin: 8px;
+    font-size: 15px;
+  }
+}
